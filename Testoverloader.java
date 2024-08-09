@@ -1,0 +1,23 @@
+import java.util.*;
+import java.io.*;
+class Testoverloader
+{
+	public static void main(String args[])
+	{
+		System.out.println(Adder.add(10,10));
+		System.out.println(Adder.add(10,10,10));
+	}
+}
+
+class Adder
+{
+	static int add(int a, int b)
+	{
+		return a + b;
+	}
+	static int add(int a, int b, int c)
+	{
+		return a+b+c;
+	}
+}
+		
