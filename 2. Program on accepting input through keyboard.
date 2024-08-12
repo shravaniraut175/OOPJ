@@ -1,0 +1,14 @@
+import java.io.*;
+import java.util.*;
+class Tester {
+	public static void main(String[] args) {
+		// Implement your code here 
+		Scanner sc = new Scanner(System.in);
+		//nextLine();
+		String name = sc.nextLine();
+		//nextLine();
+		String desg = s.nextLine();
+		System.out.println("My name is " +name);
+		System.out.println("My Designation is "+ desg);
+	}
+}
