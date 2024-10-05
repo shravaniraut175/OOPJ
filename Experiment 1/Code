@@ -1,0 +1,154 @@
+//if elseif else
+import java.util.Scanner;
+
+public class Calculator {
+	public static void main(String[] args)
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter the first number ");
+		int a = sc.nextInt();
+		System.out.print("Enter the second number ");
+		int b = sc.nextInt();
+		System.out.print("Enter the operation you want to perform [ + - * / %]");
+		char op = sc.next().charAt(0);
+		solve(a, b, op);
+	}
+	public static int solve(int a, int b, char op)
+	{
+		int ans = 0;
+		if (op == '+') 
+		{
+			ans = a + b;
+		}
+		else if (op == '-') 
+		{
+			ans = a - b;
+		}
+		else if (op == '*') 
+		{
+			ans = a * b;
+		}
+		else if (op == '%') 
+		{
+			ans = a % b;
+		}
+		else if (op == '/') 
+		{
+			ans = a / b;
+		}
+
+		System.out.println("Your answer is  " + ans);
+		return ans;
+	}
+}
+
+
+
+//switch case
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        int day;
+        System.out.print("Enter the number of day");
+        day = sc.nextInt();
+        String dayString;
+
+        switch (day) {
+
+        case 1:
+            dayString = "Monday";
+            break;
+
+        case 2:
+            dayString = "Tuesday";
+            break;
+
+        case 3:
+            dayString = "Wednesday";
+            break;
+
+        case 4:
+            dayString = "Thursday";
+            break;
+
+        case 5:
+            dayString = "Friday";
+            break;
+
+        case 6:
+            dayString = "Saturday";
+            break;
+
+        case 7:
+            dayString = "Sunday";
+            break;
+
+        default:
+            dayString = "Invalid day";
+        }
+        System.out.println(dayString);
+    }
+}
+
+
+
+//while
+import java.util.*;
+class Main
+{
+    public  static void countno(int n)
+    {
+        int count =0;
+        while(n != 0)
+        {
+            n = n/10;
+            count++;
+        }
+        System.out.println(count);
+    }
+    public static void main(String args [])
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number:");
+        int n = sc.nextInt();
+        countno(n);
+    }
+}
+
+
+
+//nested for
+import java.util.Scanner;
+class Main 
+{
+    public static void squareWall(int s)
+    {
+        int i,j;
+        for(i=1; i<=s; i++)
+        {
+            for(j=1; j<=s; j++)
+            {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void main(String[] args)
+    {
+        Scanner scn = new Scanner(System.in);
+        System.out.print("Enter value of side: ");
+        int s = scn.nextInt();
+        squareWall(s);
+    
+    }
+}
+
+
+
+
+
