@@ -1,0 +1,34 @@
+// A simple Java program to demonstrate classes and objects
+
+class Rectangle 
+{
+    int length;
+    int width;
+
+    // Constructor
+    public Rectangle(int length, int width) 
+    {
+        this.length = length;
+        this.width = width;
+    }
+
+    // Method
+    public int calculateArea() 
+    {
+        return length * width;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) 
+    {
+        // Creating an object of the Rectangle class
+        Rectangle rect1 = new Rectangle(5, 10);
+
+        // Accessing the object's attributes and methods
+        System.out.println("Length of rect1: " + rect1.length);
+        System.out.println("Width of rect1: " + rect1.width);
+        System.out.println("Area of rect1: " + rect1.calculateArea());
+
+    }
+}
